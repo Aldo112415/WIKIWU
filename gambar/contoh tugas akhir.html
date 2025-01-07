@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Pembacaan Komik</title>
+    <style>
+        /* Gaya CSS untuk menampilkan komik */
+        
+        .komik {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        
+        .komik img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="komik">
+        <img src="/chapter1/0.westmanga.info.jpg" alt="Komik">
+    </div>
+
+    <script>
+        // Logika JavaScript untuk navigasi komik
+        var gambarKomik = document.querySelector('.komik img');
+        var daftarKomik = [
+            '/chapter1/0.westmanga.info.jpg',
+            'gambar-komik2.jpg',
+            'gambar-komik3.jpg'
+            // Tambahkan daftar gambar komik lainnya di sini
+        ];
+        var indeksKomik = 0;
+
+        function tampilkanKomik(indeks) {
+            gambarKomik.src = daftarKomik[indeks];
+        }
+
+        function komikSebelumnya() {
+            indeksKomik--;
+            if (indeksKomik < 0) {
+                indeksKomik = daftarKomik.length - 1;
+            }
+            tampilkanKomik(indeksKomik);
+        }
+
+        function komikSelanjutnya() {
+            indeksKomik++;
+            if (indeksKomik >= daftarKomik.length) {
+                indeksKomik = 0;
+            }
+            tampilkanKomik(indeksKomik);
+        }
+
+        // Event listener untuk tombol navigasi
+        document.addEventListener('DOMContentLoaded', function() {
+            var tombolSebelumnya = document.querySelector('#tombol-sebelumnya');
+            var tombolSelanjutnya = document.querySelector('#tombol-selanjutnya');
+
+            tombolSebelumnya.addEventListener('click', komikSebelumnya);
+            tombolSelanjutnya.addEventListener('click', komikSelanjutnya);
+        });
+    </script>
+
+    <!-- Tombol navigasi -->
+    <button id="tombol-sebelumnya">Sebelumnya</button>
+    <button id="tombol-selanjutnya">Selanjutnya</button>
+</body>
+
+</html>

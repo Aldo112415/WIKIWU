@@ -1,0 +1,110 @@
+/* styles.css */
+
+
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+
+/* Header Styles */
+
+.header {
+    background-color: #F8F8F8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100vw;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.mode-button,
+.home-button {
+    margin-left: 5px;
+}
+
+
+/* Content Styles */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table-description {
+    width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+
+/* Dark Mode Styles */
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.mode-button {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mode-button.dark-mode {
+    background-color: #000;
+    color: #fff;
+}

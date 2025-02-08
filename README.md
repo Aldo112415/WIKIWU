@@ -1,5 +1,3 @@
-Tentu! Berikut adalah contoh README.md untuk proyek GitHub Anda yang menjelaskan cara memasang database menggunakan **XAMPP**, dengan nama database yang telah ditetapkan.  
-
 ---
 
 # 📌 Panduan Instalasi Database dengan XAMPP  

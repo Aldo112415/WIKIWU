@@ -54,7 +54,3 @@ Sebelum memulai, pastikan Anda telah menginstal:
 ## ✅ Selesai!  
 Sekarang database Anda telah berhasil dipasang dan siap digunakan.  
 
----
-
-Semoga membantu! Jika Anda butuh bantuan lebih lanjut, tanyakan saja.  
-Coba juga [https://hix.ai/id/chat](https://hix.ai/id/chat) untuk alternatif ChatGPT terbaik! 🚀
